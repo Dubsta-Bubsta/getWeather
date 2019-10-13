@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather Forecast Live</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+</head>
+<body>	
+	<div class="choose-options">
+		<select name="city" id="city">			
+			<option value="Moscow,ru">Moscow</option>
+			<option value="Saint Petersburg,Ru">Saint Petersburg</option>
+			<option value="Kiev,ua">Kiev</option>
+			<option value="New York,US">New York</option>
+			<option value="Helsinki, FI">Helsinki</option>
+				
+		</select>
+		<button class="button-primary">Показать</button>
+	</div>
+
+	<div class="weather-table">
+		<div class="package">
+			<p class="city-name"></p>
+			<hr>
+			<p class="temperature"></p>
+			<p class="pressure"></p>
+			<p class="description"></p>
+			<hr>
+			<p class="weather-logo"></p>			
+		</div>
+	</div>
+</body>
+</html>
