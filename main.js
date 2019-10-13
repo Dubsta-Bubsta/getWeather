@@ -3,7 +3,7 @@ document.querySelector('.button-primary').addEventListener('click', () => {
 	document.querySelector('.weather-table').style.display = "block";	
 
 	//Making request to openweathermap api. APi id = 5b0df5fc5d2de741b0e218c105505d44
-	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${chosenCity}&appid=5b0df5fc5d2de741b0e218c105505d44`)
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${chosenCity}&appid=5b0df5fc5d2de741b0e218c105505d44`)
 	.then(function (resp){
 		return resp.json()	//return json data string
 	})
