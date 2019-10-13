@@ -2,8 +2,8 @@ document.querySelector('.button-primary').addEventListener('click', () => {
 	let chosenCity = document.querySelector('select').value;
 	document.querySelector('.weather-table').style.display = "block";	
 
-	//Making request to openweathermap api. APi id = 5b0df5fc5d2de741b0e218c105505d44
-	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${chosenCity}&appid=5b0df5fc5d2de741b0e218c105505d44`)
+	//Making request to openweathermap api. APi id = 8db3878fbc213f1668e782cfe7422b42
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${chosenCity}&appid=8db3878fbc213f1668e782cfe7422b42`)
 	.then(function (resp){
 		return resp.json()	//return json data string
 	})
