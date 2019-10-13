@@ -9,7 +9,7 @@ document.querySelector('.button-primary').addEventListener('click', () => {
 	})
 	.then(function (data){
 		console.log(data);	//Filling data to html
-		document.querySelector('.city-name').textContent = `Город:  ${data.name}`;
+		document.querySelector('.city-name').textContent = `City:  ${data.name}`;
 		document.querySelector('.temperature').innerHTML = `Temperature: ${Math.round(data.main.temp - 273) + '&deg;'}C`;
 		document.querySelector('.pressure').textContent = `Pressure:  ${data.main.pressure * 0.75} mm Hg`;
 		document.querySelector('.description').innerHTML = `Sky: ${data.weather[0]['description']}`;
