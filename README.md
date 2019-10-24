@@ -8,5 +8,5 @@ First, i made only JSON output of data form website, but later, i decided make a
 # Technologies used
 - HTML
 - CSS
-- JAvaScript
+- JфvaScript
 - API
