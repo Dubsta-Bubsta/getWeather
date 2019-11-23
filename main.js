@@ -10,7 +10,7 @@ document.querySelector('.button-primary').addEventListener('click', () => {
 	.then(function (data){
 		console.log(data);	//Filling data to html
 		document.querySelector('.city-name').textContent = `City:  ${data.name}`;
-		document.querySelector('.temperature').innerHTML = `Temperature: ${Math.round(data.main.temp - 273) + '&deg;'}C`;
+		document.querySelector('.temperature').textContent = `Temperature: ${Math.round(data.main.temp - 273) + '&deg;'}C`;
 		document.querySelector('.pressure').textContent = `Pressure:  ${data.main.pressure * 0.75} mm Hg`;
 		document.querySelector('.description').innerHTML = `Sky: ${data.weather[0]['description']}`;
 		document.querySelector('.weather-logo').innerHTML = `<img src = "https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
